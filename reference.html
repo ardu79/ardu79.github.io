@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de Paiement</title>
+    <!-- Lien vers votre fichier CSS pour le style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmation de Paiement</h1>
+        <form method="post" action="traitement_paiement.php">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br>
+
+            <label for="reference">Référence du Paiement :</label>
+            <input type="text" id="reference" name="reference" required><br>
+
+            <input type="submit" value="Confirmer le Paiement">
+        </form>
+    </div>
+</body>
+</html>

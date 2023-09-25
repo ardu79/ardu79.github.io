@@ -1,0 +1,62 @@
+/* Réinitialiser les marges et les rembourrages par défaut */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Styles pour l'en-tête */
+header {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Styles pour la navigation */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #333;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Styles pour la section principale */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Styles pour le pied de page */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}

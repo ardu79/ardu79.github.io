@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <!-- Lien vers votre fichier CSS pour le style -->
+    <link rel="stylesheet" href="accueil.css">
+    <!-- Lien vers votre fichier JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Votre code JavaScript ici
+    // Liste des messages à afficher
+const messages = [
+    "Bienvenue sur notre site d'abonnement en ligne",
+    "Découvrez nos offres exclusives",
+    "Abonnez-vous dès aujourd'hui !"
+];
+
+// Sélectionnez l'élément d'en-tête
+const header = document.querySelector("header h1");
+
+// Fonction pour afficher les messages à intervalles réguliers
+function afficherMessages() {
+    let index = 0;
+
+    function changerMessage() {
+        header.textContent = messages[index];
+        index = (index + 1) % messages.length;
+    }
+
+    setInterval(changerMessage, 3000); // Change le message toutes les 3 secondes
+}
+
+// Appel de la fonction pour commencer l'animation
+afficherMessages();
+
+});
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur Notre Site Web</h1>
+        <p>La meilleure destination en ligne pour...</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="nos_prix.html">Nos prix</a></li>
+            <li><a href="index.html">S'abonner</a></li>
+            <li><a href="reference.html">Finalisation</a></li>
+            <li><a href="aide.html">Aide</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Nos Services</h2>
+            <p>Découvrez nos services exceptionnels qui répondent à tous vos besoins.</p>
+            <ul>
+                <li><a href="index.html">M'abonner</a></li>
+                <li><a href="reference.html">Finaliser la transaction</a></li>
+                <li> <a href="nos_prix.html">Decouvrir nos prix</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <br>
+            <h2>À Propos de Nous</h2>
+            <p>En savoir plus sur notre entreprise et notre engagement envers nos clients.</p>
+                <p>Notre entreprise de pronostics en ligne dédiée aux paris sportifs, nous mettons tout en œuvre pour vous fournir des prévisions précises et fiables pour vos paris. Notre équipe d'experts passionnés de sport analyse attentivement les statistiques, les performances passées des équipes et les tendances actuelles pour vous donner les meilleurs conseils de paris. Que vous soyez un parieur occasionnel ou expérimenté, notre entreprise est là pour vous aider à prendre des décisions éclairées et à augmenter vos chances de gagner. Faites confiance à nos pronostics pour vous guider vers le succès dans vos paris sportifs !</p>
+            <br>
+            </section>
+    </main>
+
+    <footer>
+        <p>Contactez-nous à <a href="mailto:arthurdzinaku@gmail.com">contact@monsite.com</a></p>
+    </footer>
+</body>
+</html>

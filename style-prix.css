@@ -1,0 +1,56 @@
+/* style-prix.css */
+
+/* Réinitialisation des marges et des rembourrages pour la page */
+body, h1, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Définir une couleur de fond et un texte centré */
+body {
+    background-color: #f5f5f5;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Style de la section de contenu */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style du titre */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style de la liste des prix */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style des éléments de la liste */
+li {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Style du lien pour l'inscription */
+p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+/* Style au survol du lien */
+p a:hover {
+    text-decoration: underline;
+}
